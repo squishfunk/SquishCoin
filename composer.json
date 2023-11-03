@@ -1,0 +1,17 @@
+{
+  "name": "squishfunk/squishcoin",
+  "description": "Implementation of Bitcoin written in PHP",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Damian",
+      "email": "kitlasdamian@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SquishCoin\\": "src/"
+    }
+  }
+}
