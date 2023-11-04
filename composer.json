@@ -1,8 +1,8 @@
 {
   "name": "squishfunk/squishcoin",
-  "description": "Implementation of Bitcoin written in PHP",
+  "description": "Implementation of blockchain cryptocurrency written in PHP",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
     {
       "name": "Damian",
