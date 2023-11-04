@@ -26,7 +26,7 @@ SquishCoin has the following requirements:
 If you want to contribute to SquishCoin, you should also install development dependencies. You can do this by running:
 
 ```bash
-composer install --dev
+composer require squishfunk/squishcoin:dev-master 
 ```
 
 ## Testing
