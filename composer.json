@@ -13,5 +13,12 @@
     "psr-4": {
       "SquishCoin\\": "src/"
     }
+  },
+  "require": {
+    "phpseclib/phpseclib": "^3.0",
+    "tomwright/php-config": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "10"
   }
 }

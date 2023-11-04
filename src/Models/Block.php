@@ -4,12 +4,15 @@
 namespace SquishCoin\Models;
 
 
+use phpseclib3\Crypt\Hash;
+
 class Block
 {
     public string $prevHash;
     public Transaction $transaction;
     public int $ts;
-    public string $hash;
+    public bool|string $hash;
+    public int $nonce;
 
     /**
      * Block constructor.
@@ -23,7 +26,8 @@ class Block
         $this->transaction = $transaction;
 
         $this->ts = time();
-        $this->hash = hash('sha256', json_encode($this));
+        $this->hash = (new Hash('sha256'))->hash($this);
+        $this->nonce = mt_rand(0, 999999999);
     }
 
     /**
@@ -33,4 +37,11 @@ class Block
     {
         return $this->hash;
     }
+
+    public function __toString(): string
+    {
+        return json_encode($this);
+    }
+
+
 }
